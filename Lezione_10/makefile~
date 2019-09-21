@@ -1,0 +1,6 @@
+
+prova2.o: prova2.cpp
+	mpicxx prova2.cpp -o prova2.o
+
+prova1.o: prova1.cpp
+	mpicxx prova1.cpp -o prova1.o
