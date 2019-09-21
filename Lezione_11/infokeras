@@ -1,0 +1,4 @@
+Per istallare il pacchetto 
+	conda install tensorflow
+	conda install keras
+	conda install numpy
