@@ -1,0 +1,18 @@
+
+main.exe:main.o random.o randomWalk.o blocchi.o
+	g++ main.o random.o randomWalk.o blocchi.o -o main.exe
+
+main.o: main.cpp randomWalk.h random.h blocchi.h main.h
+	g++ -c main.cpp -o main.o
+
+randomWalk.o: randomWalk.cpp randomWalk.h random.h
+	g++ -c randomWalk.cpp -o randomWalk.o
+
+random.o: random.cpp random.h
+	g++ -c random.cpp -o random.o
+
+blocchi.o: blocchi.cpp blocchi.h random.h
+	g++ -c blocchi.cpp -o blocchi.o
+
+
+
